@@ -1,0 +1,6 @@
+[Test]
+ExecStart=./program-bm17.sh
+Name=Program OS for BM17
+Description=Program production operating system for BM17
+Requires=swd
+Timeout=30

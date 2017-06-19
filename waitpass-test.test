@@ -1,0 +1,6 @@
+[Test]
+ExecStart=./10-wait-for-test.sh
+Name=Wait for pass string on serial
+Description=Waits for PASS to appear on serial
+Requires=start-orchard-test
+Timeout=120
