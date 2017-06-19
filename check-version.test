@@ -1,6 +1,0 @@
-[Test]
-ExecStart=./check-version.sh
-Description=Make sure the correct version exists
-Name=Check OS version
-Requires=program-os-pvt1d
-Timeout=30
