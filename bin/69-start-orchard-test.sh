@@ -3,7 +3,7 @@
 . ./00-test-lib.sh
 
 # reset_board
-sleep 1
+sleep 2
 echo "running self test"
 stty -F /dev/ttyUSB0 115200 -icrnl -imaxbel -opost -onlcr -isig -icanon -echo
 sleep 1

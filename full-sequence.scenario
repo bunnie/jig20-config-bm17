@@ -1,5 +1,6 @@
 [Scenario]
 Name=Program Everything
 Description=Program the test OS, run the tests, then program the final OS
-Tests=program-bm17,start-orchard-test,waitpass-test,teardown-tests
+#Tests=program-bm17,start-orchard-test,waitpass-test,teardown-tests
+Tests=program-bm17
 Timeout=200

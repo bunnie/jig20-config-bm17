@@ -29,7 +29,7 @@ do
 	# This sleep seems required, otherwise it will fail if called
 	# immediately after a "program" has failed.
 #	sleep .5
-	echo "kinetis mdm mass_erase" | netcat localhost 4444 > /dev/null
+#	echo "kinetis mdm mass_erase" | netcat localhost 4444 > /dev/null
 #	echo "Failed to program."
 done
 
