@@ -1,11 +1,14 @@
 [Test]
-ExecStart=sudo /usr/local/bin/openocd -l /dev/fd/1 -f interface/raspberrypi2-native.cfg -c "transport select swd" -f target/kx.cfg -c "reset_config srst_only srst_push_pull" -c "init" -c "reset halt"
-#-c "kx.cpu configure -rtos ChibiOS" 
+ExecStart=./program-cube.sh
 ExecStop=sudo /usr/bin/killall openocd
 Name=Run OpenOCD
 Description=Run the OpenOCD debugger in the background.
-Timeout=1000
+Timeout=60
 DaemonReadyText=target halted due to debug-request
 Requires=mass-erase
 Provides=swd
 Type=daemon
+
+# sudo /usr/local/bin/openocd -l /dev/fd/1 -c "source raspi.cfg" -c "transport select swd" -f target/kx.cfg -c "init" &
+#-c "reset_config srst_only srst_push_pull" -c "kx.cpu configure -rtos ChibiOS"
+# -c "reset halt"

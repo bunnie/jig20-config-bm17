@@ -2,7 +2,7 @@
 
 white_led=19
 blue_led=13
-yellow_led=6
+yellow_led=26
 
 all_off() {
 	gpio -g write ${white_led} 0

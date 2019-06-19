@@ -6,7 +6,7 @@ reset_level=12
 #light_sensor=37
 all_pins="${reset_level}"
 #uart=/dev/ttyAMA0
-uart=/dev/ttyUSB0
+uart=/dev/ttyS0
 baud=115200
 error_count=0
 

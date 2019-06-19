@@ -1,6 +1,6 @@
 [Jig]
-Name=BM2017 Jig
-Description=BM2017 factory test jig
-TestFile=/boot/bm17-jig
+Name=Cubegarden Jig
+Description=Cubegarden factory test jig
+TestFile=/boot/cubegarden-jig
 DefaultWorkingDirectory=/home/pi/code/jig-20-config-bm17/bin
 DefaultScenario=full-sequence

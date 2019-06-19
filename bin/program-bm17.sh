@@ -11,10 +11,11 @@ max=5
 for i in $(seq 1 5)
 do
 	echo "Programming test OS (try ${i}/${max})"
-	echo "reset" | netcat localhost 4444 > /dev/null
-	echo "kinetis fcf_source write" | ncat localhost 4444 > /dev/null
-	echo "halt" | netcat localhost 4444 > /dev/null
-	if echo program $(pwd)/bm17.elf | netcat localhost 4444 | grep -q "Programming Finished" 2> /dev/null
+	echo "reset halt" | netcat localhost 4444 > /dev/null
+	echo "kinetis fcf_source protection" | ncat localhost 4444 > /dev/null
+	echo "kinetis fopt 0xf9" | ncat localhost 4444 > /dev/null
+	echo "reset halt" | netcat localhost 4444 > /dev/null
+	if echo program $(pwd)/cube.elf | netcat localhost 4444 | grep -q "Programming Finished" 2> /dev/null
 	then
 		echo "Programmed successfully"
 
