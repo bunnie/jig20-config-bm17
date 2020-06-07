@@ -1,6 +1,7 @@
 [Test]
-ExecStart=./program-bm17.sh
-Name=Program OS for BM17
-Description=Program production operating system for BM17
-Requires=swd
+ExecStart=/home/pi/code/jig20-config-bm17/bin/program-bm17.sh
+Name=Program OS for cubegarden
+Description=Program production operating system for Cubegarden
+Requires=kill-openocd,mass-erase
 Timeout=30
+Provides=program-bm17

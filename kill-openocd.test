@@ -1,0 +1,6 @@
+[Test]
+ExecStart=/home/pi/code/jig20-config-bm17/bin/killall_openocd.sh
+Name=Kill openOCD
+Description=Kill instances of openocd
+Timeout=2
+Provides=kill-openocd

@@ -1,12 +1,12 @@
 #!/bin/sh -e
 gpio_dir=/sys/class/gpio
 #reset_pulse=34
-reset_level=12
+reset_level=17
 #servo_pwm=36
 #light_sensor=37
 all_pins="${reset_level}"
 #uart=/dev/ttyAMA0
-uart=/dev/ttyUSB0
+uart=/dev/ttyS0
 baud=115200
 error_count=0
 

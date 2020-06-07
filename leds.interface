@@ -2,4 +2,5 @@
 Name=Front panel LEDs
 Description=Shows test status on the LEDs
 Format=text
-ExecStart=/home/pi/code/jig-20-config-bm17/bin/led-interface.sh
+ExecStart=/home/pi/code/jig20-config-bm17/bin/led-interface.sh
+WorkingDirectory=/home/pi/code/jig20-config-bm17/bin
